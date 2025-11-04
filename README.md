@@ -27,3 +27,19 @@ git clone https://github.com/mc-tarek/ai-helpdesk-assistant.git
 cd ai-helpdesk-assistant
 pip install -r requirements.txt
 streamlit run app.py
+
+
+---
+
+### 📄 Project Overview
+Developed to showcase applied AI in IT operations — this project demonstrates  
+how AI can streamline helpdesk workflows through natural language interaction.
+
+It was built as part of my personal portfolio to demonstrate practical use of  
+**Python**, **Streamlit**, and **OpenAI API integration** for automation.
+
+---
+
+👤 **Author:** [Tarek McTabi](https://www.linkedin.com/in/tarekmctabi)  
+🎓 *M.S. Business Information Technology @ DePaul University*  
+💼 *Data Center Operations Technician Lead @ Amazon Web Services (AWS)*
