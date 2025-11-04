@@ -1,0 +1,31 @@
+playbooks:
+  Server boot:
+    - Verify power cords are fully seated and PDUs show expected load
+    - Check iDRAC or BMC for POST errors and recent events
+    - Reseat RAM and check the slot population guide
+    - Try minimal config boot with one CPU and one DIMM per channel
+    - Collect photos of motherboard LEDs and error codes
+  Networking:
+    - Check link lights and port speed on both ends
+    - Validate VLAN and switch port config, confirm MAC address learned
+    - Reseat transceivers and test a known good cable
+    - Run ipconfig or ifconfig and confirm DHCP or static settings
+    - Collect switch logs and interface counters
+  Storage:
+    - Check RAID status and rebuild progress on the controller
+    - Review SMART data for drives, swap any with pending failures
+    - Confirm cables and power to backplane and controller
+    - Verify firmware versions for controller and backplane
+    - Export controller logs before swap
+  GPU rack:
+    - Confirm liquid or air cooling flow and target temps
+    - Check PCIe seating and power leads for each accelerator
+    - Validate BIOS settings for resizable BAR and MMIO
+    - Review host dmesg for PCIe AER or Xid errors
+    - Collect BMC metrics and photos before escalation
+  Cabling:
+    - Label and trace each run against the plan
+    - Test with a known good patch and validate polarity for fiber
+    - Verify power budget and length limits for DAC or AOC
+    - Document before and after photos
+    - Update rack elevation after changes
